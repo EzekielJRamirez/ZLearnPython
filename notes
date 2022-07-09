@@ -1,0 +1,4 @@
+git commands
+git add --all
+git commit -m "comment here"
+git push
