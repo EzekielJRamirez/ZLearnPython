@@ -1,10 +1,10 @@
 # IMPORTS HERE
 from math import *
 
-# print("Hello World")
+"""
+print("Hello World")
 # this hashtag mark makes a comment
 
-"""
 print("/___|")
 print("   /|")
 print("  / |")
@@ -117,5 +117,100 @@ print(result)
 # mad libs 58:30        https://youtu.be/rfscVS0vtbw?t=3510
 
 """
+print("Roses are red")
+print("Violets are blue")
+print("Today is sunny")
+print("My favorite song is \"What she wants\"")
+print("I love you\n")
+
+color = input("Enter a color: ")
+p_noun = input("Enter a plural noun: ")
+weather = input("Enter a weather condition: ")
+song = input("Enter your favorite song: ")
+celeb = input("Enter a celebrity: ")
+
+print()
+print("Roses are " + color)
+print(p_noun + " are blue")
+print("Today is " + weather)
+print("My favorite song is " + song)
+print("I love " + celeb)
+"""
+
+# Lists
 
 """
+# lists can be a mix of values
+# lists are zero indexed
+mix = [True, "James", 22]
+friends = ["James", "Cameron", "Josh", "Mark", "Collin"]
+nums = [0, 5, 10, 15, 20, 25, 30]
+
+# to get the index starting from the back of the list, use a negative number
+# in reverse the index begins at -1
+print(friends)
+print()
+print(friends[0] + "\n")
+print(friends[-1] + "\n")
+# to exclude a value use the colon in brackets
+print(friends[2:])
+# to use a range of values use two numbers with a colon, the second value is exclusive.
+# this means the values provided as borders won't be included. Otherwise it would be inclusive
+print()
+print(friends[3:5])
+print(friends[1:3])
+
+# modify only certain index of list
+friends[1] = "Chris"
+# the prev line changed Cameron to Chris
+print(friends)
+"""
+
+# list functions
+
+""" """
+mix = [True, False, "Zac", "James", 15, 22]
+friends = ["James", "Cameron", "Josh", "Mark", "Collin", "Zac", "Hovag"]
+nums = [0, 5, 10, 15, 20, 25, 30, 35, 40]
+
+# to append, add, to a list use the .extend function
+# friends.extend(nums)
+# friends.append("Tyler")
+# difference between extend and append below
+# https://stackoverflow.com/questions/252703/what-is-the-difference-between-pythons-list-methods-append-and-extend
+
+# insert value at certain location and push the rest of the values by one
+# friends.insert(1, "Kevin")
+# friends.remove("Josh")
+# print(friends)
+
+# clear eliminates all values from the list
+# friends.clear()
+# print(friends)
+
+# pop removes the last element from the list, useful in automating a list
+# friends.pop()
+# print(friends)
+
+# to search list for specific value, provide the value in parenthesis and the list
+# will return the index where that value is located, otherwise it will throw an error
+print(friends.index("Mark"))
+
+# to count how many times a value is in a list use count method
+# print(friends.count("Mark"))
+# print()
+# friends.append("Mark")
+# friends.append("Mark")
+# print(friends.count("Mark"))
+
+# to organize a list use sort
+friends.sort()
+print(friends)
+
+# reverse the current order of list with .reverse method
+friends.reverse()
+print(friends)
+
+# copy a list with the .copy method
+friends2 = friends.copy()
+print(friends2)
