@@ -168,7 +168,7 @@ print(friends)
 
 # list functions
 
-""" """
+""" 
 mix = [True, False, "Zac", "James", 15, 22]
 friends = ["James", "Cameron", "Josh", "Mark", "Collin", "Zac", "Hovag"]
 nums = [0, 5, 10, 15, 20, 25, 30, 35, 40]
@@ -214,3 +214,36 @@ print(friends)
 # copy a list with the .copy method
 friends2 = friends.copy()
 print(friends2)
+"""
+
+# tuples
+
+""" 
+# tuples are immutable, they can't be changed or modified
+coords = (2, 5, 7, 19)
+# try to change tuple, should throw error
+# coords[1] = 11
+print(coords[0])
+
+# Try making a list of tuples and experiment with that
+"""
+
+# Functions
+
+"""
+def say_hi(name, age, booly):
+    print("Hello " + name + " you are " + str(age))
+    print("This sentence is... " + str(booly))
+    print()
+    # conventional naming in python functions is to use underscore on longer names
+    # all code that is indented is considered part of the function
+
+print("Top")
+say_hi("Zeek", 21, True)
+say_hi("Elijha", 20, False)
+print("Bottom")
+"""
+
+# return statement 1:34:17
+
+""" """
