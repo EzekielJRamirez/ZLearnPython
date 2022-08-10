@@ -231,6 +231,7 @@ print(coords[0])
 # Functions
 
 """
+# name, age, and booly are params that are passed in to make the fxn more dynamic
 def say_hi(name, age, booly):
     print("Hello " + name + " you are " + str(age))
     print("This sentence is... " + str(booly))
@@ -241,9 +242,34 @@ def say_hi(name, age, booly):
 print("Top")
 say_hi("Zeek", 21, True)
 say_hi("Elijha", 20, False)
+say_hi("Levi", 12, True)
 print("Bottom")
 """
 
 # return statement 1:34:17
+
+""" 
+def cube(num):
+    # no code will work in a function after a return stmt
+    return num*num*num;
+
+base = 4
+result = cube(base)
+print(result)
+
+def name(nm):
+    print(nm + " is the name of the programmer")
+    print("bannana mo-mana fee fi fo fanna\nBannana!")
+    # nm.upper
+    print(nm[0] + "annana")
+    return nm[0] + "annana"
+
+b_name = "Ezekiel"
+b_name = name(b_name)
+print("My new name is ")
+print(b_name)
+"""
+
+# If Statements
 
 """ """
