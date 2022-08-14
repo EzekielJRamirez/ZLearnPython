@@ -248,12 +248,12 @@ print("Bottom")
 
 # return statement 1:34:17
 
-""" 
+"""
 def cube(num):
     # no code will work in a function after a return stmt
     return num*num*num;
 
-base = 4
+base = 5
 result = cube(base)
 print(result)
 
@@ -271,5 +271,42 @@ print(b_name)
 """
 
 # If Statements
+
+""" """
+
+is_male = True
+is_tall = False
+
+if is_male:
+    print("You are a male")
+else:
+    print("You are not a male")
+
+# https://stackabuse.com/python-check-if-string-contains-substring/
+# check for ways to use substrings in python
+eye_color = "blue"
+if "black" in eye_color:
+    print("My eyes are black")
+if "blue" in eye_color:
+    print("My eyes are blue")
+
+height = 5
+# enter height, round to the nearest foot
+if height <= 4:
+    print("I am four foot tall or shorter")
+else:
+    print("I am taller than four feet")
+
+# else if is coded as "elif"
+if is_male and is_tall:
+    print("You are a tall male")
+elif is_male and not(is_tall):
+    print("You are a short male")
+elif not(is_male) and is_tall:
+    print("You are not a male, but you are tall")
+else:
+    print("You are not tall and not male")
+
+# If stmts and Comparisons
 
 """ """
