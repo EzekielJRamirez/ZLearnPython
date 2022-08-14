@@ -272,7 +272,7 @@ print(b_name)
 
 # If Statements
 
-""" """
+""" 
 
 is_male = True
 is_tall = False
@@ -306,7 +306,26 @@ elif not(is_male) and is_tall:
     print("You are not a male, but you are tall")
 else:
     print("You are not tall and not male")
+    
+"""
 
 # If stmts and Comparisons
 
 """ """
+
+
+def max_num(num1, num2, num3):
+    if num1 >= num2 and num1 >= num3:
+        return num1
+    elif num2 >= num3 and num2 >= num1:
+        return num2
+    else:
+        return num3
+
+
+print(max_num(103, 2, 15))
+
+
+# try to compare strings here
+def str_compare():
+    print("Finish me!")
