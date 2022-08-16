@@ -311,7 +311,7 @@ else:
 
 # If stmts and Comparisons
 
-""" """
+""" 
 
 
 def max_num(num1, num2, num3):
@@ -327,5 +327,36 @@ print(max_num(103, 2, 15))
 
 
 # try to compare strings here
-def str_compare():
-    print("Finish me!")
+def str_compare(name):
+    print(name)
+    if name == "Zeek":
+        print("You have the same name as the person who made this program:" + name)
+    else:
+        print("You do not share a name with the programmer")
+
+
+name = "Zeek"
+str_compare(name)
+"""
+
+# Building a better Calculator
+
+""" """
+
+num1 = float(input("Enter first number: "))
+op = input("Enter operator: ")
+num2 = float(input("Enter the second number: "))
+
+if op == "+":
+    print(num1 + num2)
+elif op == "-":
+    print(num1 - num2)
+elif op == "*":
+    print(num1 * num2)
+elif op == "/":
+    print(num1 / num2)
+elif op == "%":
+    print("Your remainder is ")
+    print(num1 % num2)
+else:
+    print("Invalid operator")
