@@ -341,7 +341,7 @@ str_compare(name)
 
 # Building a better Calculator
 
-""" """
+""" 
 
 num1 = float(input("Enter first number: "))
 op = input("Enter operator: ")
@@ -360,3 +360,97 @@ elif op == "%":
     print(num1 % num2)
 else:
     print("Invalid operator")
+"""
+
+# Dictionaries
+
+""" 
+
+monthConversions = {
+    # this is the syntax for a dictionary
+    "Jan": "Janurary",
+    "Feb": "February",
+    "Mar": "March",
+    "Apr": "April",
+    "May": "May",
+    "Jun": "June",
+    "Jul": "July",
+    "Aug": "August",
+    "Sep": "September",
+    "Oct": "October",
+    "Nov": "November",
+    "Dec": "December"
+}
+
+States = {
+    # Key: value
+    # keys have to be unique
+    "CA": "California",
+    "OR": "Oregon"
+    # Alabama
+    # Alaska
+    # Arizona
+    # Arkansas
+    # California
+    # Colorado
+    # Connecticut
+    # Delaware
+    # Florida
+    # Georgia
+    # Hawaii
+    # Idaho
+    # IllinoisIndiana
+    # Iowa
+    # Kansas
+    # Kentucky
+    # Louisiana
+    # Maine
+    # Maryland
+    # Massachusetts
+    # Michigan
+    # Minnesota
+    # Mississippi
+    # Missouri
+    # MontanaNebraska
+    # Nevada
+    # New Hampshire
+    # New Jersey
+    # New Mexico
+    # New York
+    # North Carolina
+    # North Dakota
+    # Ohio
+    # Oklahoma
+    # Oregon
+    # PennsylvaniaRhode Island
+    # South Carolina
+    # South Dakota
+    # Tennessee
+    # Texas
+    # Utah
+    # Vermont
+    # Virginia
+    # Washington
+    # West Virginia
+    # Wisconsin
+    # Wyoming
+}
+
+print(monthConversions["Oct"])
+# or
+print(monthConversions.get("Oct"))
+
+# when using the get method, you can specify a default message
+# in case the key doesn't map to any value in the dictionary
+"""
+
+# while loop
+
+""" """
+
+i = 0
+while i <= 15:
+    print(i * 5)
+    i += 1
+
+print("Done with loop")
