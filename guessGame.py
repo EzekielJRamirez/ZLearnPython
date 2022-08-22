@@ -240,9 +240,10 @@ there will be some import statements down here so we know what was used,
 normally they would appear at the top of the python file
 
 you can also find modules written by other programmers, experiment with new ones!!!
-"""
+
 
 import tools
+# import docx
 print(tools.roll_dice(22))
 # find the python resources for the list of modules I can import
 # Make sure it is for the version of python you are using
@@ -254,7 +255,5 @@ print(tools.roll_dice(22))
 # my pip and python wouldn't run in the command prompt window
 # when you add python for the first make sure you check that the path option is clicked ON
 # https://www.geeksforgeeks.org/how-to-install-pip-on-windows/
-
-
-
+"""
 
