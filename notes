@@ -15,3 +15,10 @@ https://github.com/git-guides/git-pull
 
 Link to youtube video
 https://youtu.be/rfscVS0vtbw?t=9168
+
+
+ERROR AND FIXES SECTION
+
+1. I had trouble using pip at first
+    - my solution was to install a newer version of python and
+    have the installer create the path for me
