@@ -1,3 +1,5 @@
+# import tools
+
 # Guess Game
 
 """
@@ -179,7 +181,7 @@ except ValueError:
 """ 
 the open() command takes in a path or file name to
 know which file to read data from
-"""
+
 
 # here I will use the files name becuase the python file and
 # data file are in the same folder/directory
@@ -214,3 +216,45 @@ for employee in employee_file.readlines():
 
 # don't forget to close files you work with
 employee_file.close()
+"""
+
+# Writing to Files
+
+""" 
+
+# writing (w) over writes everything in the target file, BE CAREFUL
+# opening a file that doesn't exist will create that file. employees1.txt is an example
+# you can even write an html file in python
+employee_file = open("employees1.txt", "a")
+# when adding to a file, make sure you know if you need a newline character or indents
+# employee_file.write("\nKelly - Human Services")
+# print(employee_file.read())
+employee_file.close
+"""
+
+# Modules and Pip
+
+""" 
+modules are python files that we can call to use from another file location
+there will be some import statements down here so we know what was used,
+normally they would appear at the top of the python file
+
+you can also find modules written by other programmers, experiment with new ones!!!
+"""
+
+import tools
+print(tools.roll_dice(22))
+# find the python resources for the list of modules I can import
+# Make sure it is for the version of python you are using
+# https://docs.python.org/3.7/py-modindex.html
+
+# https://python-docx.readthedocs.io/en/latest/
+
+# Pip is a package manager that handles the download of third party modules/installations
+# my pip and python wouldn't run in the command prompt window
+# when you add python for the first make sure you check that the path option is clicked ON
+# https://www.geeksforgeeks.org/how-to-install-pip-on-windows/
+
+
+
+
