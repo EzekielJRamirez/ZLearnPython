@@ -259,7 +259,7 @@ print(tools.roll_dice(22))
 
 # Classes and Objects
 
-""" """
+""" 
 
 from Student import Student
 # read as 'from the student file, get the student class
@@ -269,5 +269,54 @@ print("Name: " + Student1.name)
 print("Major: " + Student1.major)
 print("GPA: " + str(Student1.gpa))
 print("Probation: " + str(Student1.probation))
+"""
+
+# Multiple Choice Quiz
+
+""" 
+
+from Question import Question
+
+# here is the list of questions and the available responses
+question_prompts = [
+    "What color are apples?\n(a) Red/Green\n(b) Purple\n(c) Orange\n\n",
+    "What color are Bananas?\n(a) Teal\n(b) Magenta\n(c) Yellow\n\n",
+    "What color are strawberries?\n(a) Yellow\n(b) Red\n(c) Blue\n\n"
+]
+
+# this list is taking the prompts and putting the values into an instance of the
+# question and setting what answer is correct
+questions = [
+    Question(question_prompts[0], "a"),
+    Question(question_prompts[1], "c"),
+    Question(question_prompts[2], "b")
+]
 
 
+# create a method to iterate through questions
+# keep track of the player's score
+# take in the list of questions and track their correct answers
+def run_test(questions):
+    score = 0
+    for que in questions:
+        answer = input(que.prompt)
+        if answer == que.answer:
+            score += 1
+    print("You got " + str(score) + "/" + str(len(questions)) + " correct")
+
+
+run_test(questions)
+
+# maybe I should try to make my own test
+"""
+
+# Object Functions
+
+""" """
+from Student import Student
+
+student1 = Student("Oscar", "Accounting", 3.1)
+student2 = Student("Phyllis", "Business", 3.8)
+
+print(student1.on_honor_roll())
+print(student2.on_honor_roll())
