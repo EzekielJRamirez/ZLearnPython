@@ -257,3 +257,17 @@ print(tools.roll_dice(22))
 # https://www.geeksforgeeks.org/how-to-install-pip-on-windows/
 """
 
+# Classes and Objects
+
+""" """
+
+from Student import Student
+# read as 'from the student file, get the student class
+Student1 = Student("Zeek", "Computer Science", 3.5, False)
+# the class is like a template and the instance is an actual student
+print("Name: " + Student1.name)
+print("Major: " + Student1.major)
+print("GPA: " + str(Student1.gpa))
+print("Probation: " + str(Student1.probation))
+
+
